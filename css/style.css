@@ -465,6 +465,10 @@ ul {
   margin-right: 10px;
 }
 
+.footer-btn-icon {
+  margin-left: 10px;
+}
+
 /* Clients */
 .clients-title {
   font-family: Roboto;
@@ -693,6 +697,12 @@ ul {
 }
 .open-icon {
   fill: #212121;
+  transition: 250ms linear;
+}
+
+.open-icon:hover,
+.open-icon:focus {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -733,9 +743,22 @@ ul {
   border-radius: 4px;
   padding-left: 42px;
 }
+
+.modal-form-input:focus,
+.modal-form-input:hover {
+  border-color: var(--accent-color);
+}
+
 .input-wrap {
   display: block;
   position: relative;
+  transition: border 250ms linear;
+}
+
+.input-wrap:hover,
+.input-wrap:focus {
+  fill: var(--accent-color);
+  border: var(--accent-color);
 }
 
 .modal-icon {
@@ -764,6 +787,41 @@ ul {
 
 .modal-form-link {
   color: var(--accent-color);
+}
+
+.check-lable {
+  display: flex;
+  align-items: center;
+}
+
+.check-lable::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.checkbox:checked + .check-lable::before {
+  background: var(--accent-color);
+  fill: #ffffff;
+  background-image: url(../images/Check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+}
+
+.modal-form-text {
+  margin-bottom: 30px;
+}
+
+.ceckbox-text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
 .form-btn {
