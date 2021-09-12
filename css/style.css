@@ -697,7 +697,7 @@ ul {
 }
 .open-icon {
   fill: #212121;
-  transition: 250ms linear;
+  transition: border 250ms linear;
 }
 
 .open-icon:hover,
@@ -755,12 +755,6 @@ ul {
   transition: border 250ms linear;
 }
 
-.input-wrap:hover,
-.input-wrap:focus {
-  fill: var(--accent-color);
-  border: var(--accent-color);
-}
-
 .modal-icon {
   position: absolute;
   left: 12px;
@@ -813,6 +807,9 @@ ul {
   border: none;
 }
 
+.modal-coment-field {
+  margin-bottom: 20px;
+}
 .modal-form-text {
   margin-bottom: 30px;
 }
@@ -825,7 +822,9 @@ ul {
 }
 
 .form-btn {
-  margin: 0;
-  display: block;
   margin: 0 auto;
+  position: absolute;
+  align-self: center;
+  width: 200px;
+  height: 50px;
 }
