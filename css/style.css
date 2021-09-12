@@ -697,12 +697,17 @@ ul {
 }
 .open-icon {
   fill: #212121;
-  transition: border 250ms linear;
 }
 
 .open-icon:hover,
 .open-icon:focus {
   fill: var(--accent-color);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .is-hidden {
@@ -747,6 +752,7 @@ ul {
 .modal-form-input:focus,
 .modal-form-input:hover {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 .input-wrap {
@@ -760,6 +766,11 @@ ul {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.modal-form-input:hover + .modal-icon,
+.modal-form-input:focus + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-comment {
@@ -800,17 +811,17 @@ ul {
 .checkbox:checked + .check-lable::before {
   background: var(--accent-color);
   fill: #ffffff;
-  background-image: url(../images/Check.svg);
+  background-image: url(../images/Vector.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   border: none;
 }
 
-.modal-coment-field {
-  margin-bottom: 20px;
-}
 .modal-form-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -822,9 +833,9 @@ ul {
 }
 
 .form-btn {
+  margin: 0;
+  display: block;
   margin: 0 auto;
-  position: absolute;
-  align-self: center;
   width: 200px;
   height: 50px;
 }
